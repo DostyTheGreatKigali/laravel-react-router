@@ -1,0 +1,1704 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A platofrm for voting">
+    <meta name="author" content="JimahTech Limited">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="Voteezy">
+    <meta property="og:site_name" content="JimahTech Limited">
+    <meta property="og:description" content="A platofrm for Voting">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    
+<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> -->
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">  -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
+
+    <!-- Font Icons -->
+    <!-- <link rel="stylesheet" href="assets/fonts/icomoon/style.css"> -->
+
+    <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/brands.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/regular.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/solid.min.css">
+    
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+    crossorigin="anonymous"
+  />
+    <!-- Scripts -->
+    <!-- https://gist.github.com/amit1952/5515709b19dfc3dc12ec6b6d4baab561 -->
+    <!-- REACT LIBRARY -->
+    <!-- <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script> -->
+    <!-- BABEL LIBRARY -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>  -->
+
+    <script src='https://unpkg.com/react@16.3.1/umd/react.production.min.js'></script>
+    <script src='https://unpkg.com/react-dom@16.3.1/umd/react-dom.production.min.js'></script>
+    <script src='https://unpkg.com/react-router-dom@5.0.0/umd/react-router-dom.min.js'></script>
+    <script src='https://unpkg.com/babel-standalone@6.26.0/babel.js'></script>
+    <script src="https://unpkg.com/react-transition-group@4.4.2/dist/react-transition-group.min.js"></script>
+    <!-- <script src="https://unpkg.com/formik/dist/formik.umd.production.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/reactstrap/4.8.0/reactstrap.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/react-bootstrap@4.6.0/dist/react-bootstrap.min.js" crossorigin></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/4.3.1/react-bootstrap.min.js"></script> -->
+    <!-- <script src="assets/js/react/umd/react-dom.production.min.js"></script>
+    <script src="assets/js/react/umd/react-dom.production.min.js"></script>
+    <script src="assets/js/react/umd/react-router-dom.min.js"></script>
+    <script src="assets/js/react/babel.js"></script>
+    <script src="assets/js/react/react-transition-group.min.js"></script>
+    <script src="assets/js/react/reactstrap.min.js"></script> -->
+
+    <title>Voteezy | React</title>
+  </head>
+  <body>
+   <div id="root">
+
+    </div> <!--APP CONTAINER ENDS-->
+     
+    <!-- Library Scripts -->
+    <!-- <script src="assets/js/require.js"></script> -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- <script src="/assets/js/bs-fullscreen-modal/bs-modal-fullscreen.min.js"></script> -->
+    <script src="assets/js/jquery.sticky.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/moment.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@thelevicole/youtube-to-html5-loader@4.0.1/dist/YouTubeToHtml5.min.js"></script>
+
+
+    <!-- Custom Script -->
+
+    <script type="text/babel">
+    // const Link = ReactRouterDOM.Link;
+    // const Route = ReactRouterDOM.Route;
+    // Router Instances
+    const Router = window.ReactRouterDOM.BrowserRouter;
+    const Route = window.ReactRouterDOM.Route;
+    const Link = window.ReactRouterDOM.Link;
+    const Prompt = window.ReactRouterDOM.Prompt;
+    const Switch = window.ReactRouterDOM.Switch;
+    const Redirect = window.ReactRouterDOM.Redirect;
+    // const FormikForm = window.Formik.Form;
+    // console.log(Formik);
+
+    // Moment
+    // const Moment = window.Moment;
+
+    // var Moment = require('moment');
+    // ReactBootStrap Instances
+    // const Spinner = window.Reactstrap.Spinner;
+    // const Spinner = ReactBootstrap.Spinner;
+    // var Alert = ReactBootstrap.Alert;
+
+    const PAYMENT_API_URL = "https://api.dev.voteezy.com/api/";
+            
+      class Greeting extends React.Component {
+          render() {
+              return (<p>Hello world</p>);
+          }
+      }
+
+      // FOOTER
+      class Footer extends React.Component {
+       render() {
+        return (
+        <footer style={{backgroundColor: 'black'}} id="main_footer">
+        <div id="footer" className="footer">
+            <div className="container">
+            <div className="row">
+            <div className="col-sm-4 col-md col-sm-4 col-12 col">
+            <h5 className="headin5_amrc col_white_amrc pt2">Find us</h5>
+            <p className="mb10">Voteezy is a Voting Platform deisgned to cater for all your Voting needs</p>
+            <p><i className="fa fa-location-arrow"></i> Acheamfuor Top Hotel Plaza - Patasi | Kumasi </p>
+            <p><i className="fa fa-phone"></i>  +233 555024505  </p>
+            <p><i className="fa fa fa-envelope"></i> voteezy@gmail.com  </p>
+            </div>
+            
+            
+            <div className="col-sm-4 col-md col-6 col">
+            <h5 className="headin5_amrc col_white_amrc pt2">Quick links</h5>
+            <ul className="footer_ul_amrc">
+            <li><a href="">Content</a></li>
+            <li><a href="">Content</a></li>
+            <li><a href="">Content</a></li>
+            <li><a href="">Content</a></li>
+            <li><a href="">Content</a></li>
+            <li><a href="">Content</a></li>
+            </ul>
+            </div>
+            
+            
+            <div className="col-sm-4 col-md col-6 col">
+            <h5 className="headin5_amrc col_white_amrc pt2">Quick links</h5>
+            <ul className="footer_ul_amrc">
+            <li><a href="">Content</a></li>
+            <li><a href="">Content</a></li>
+            <li><a href="">Content</a></li>
+            <li><a href="">Content</a></li>
+            <li><a href="">Content</a></li>
+            <li><a href="">Content</a></li>
+            </ul>
+            </div>
+            
+            
+            <div className=" col-sm-4 col-md  col-12 col">
+            <h5 className="headin5_amrc col_white_amrc pt2">Follow us</h5>
+            
+            <ul className="footer_ul2_amrc">
+            <li><a href="#"><i className="fab fa-twitter fleft padding-right"></i> </a></li>
+            <li><a href="#"><i className="fab fa-facebook fleft padding-right"></i> </a></li>
+            <li><a href="#"><i className="fab fa-instagram fleft padding-right"></i> </a></li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            </div>
+            
+           
+             <div id="final_footer_container" className="">
+              <div id="copyright_terms_privacy_container">
+                <p className="mb-0" style={{pointerEvents: 'none', color: '#585858'}}>Copyright &copy; 2021</p>
+                <div id="terms_privacy_container">
+                    <p> <Link  to="/terms" className="terms_privacy">Terms of Use &nbsp;</Link></p>&#47;&nbsp;&nbsp;
+                    <p> <Link to="/privacy-policy" className="terms_privacy">Privacy Policy</Link></p>
+                </div>
+                 
+            </div>
+              <div id="quick_links_container">
+                  <p> <Link to="/" className="quick_links">Home &nbsp;&#47;&nbsp;</Link></p>
+                  <p> <Link to="/competitions" className="quick_links">Competitions &nbsp;&#47;&nbsp;</Link></p>
+                  <p> <Link to="/contact" className="quick_links">Contact Us &nbsp;&#47;&nbsp;</Link></p>
+                  <p> <Link to="/about" className="quick_links">About Us</Link></p>
+                  
+            </div>
+              <div id="quick_links_container_small_screen">
+                  <p> <Link to="/" className="quick_links">Home</Link></p>
+                  <p> <Link to="/competitions" className="quick_links">Competitions</Link></p>
+                  <p> <Link to="/contact" className="quick_links">Contact Us</Link></p>
+                  <p> <Link to="/about" className="quick_links">About Us</Link></p>
+                  
+            </div>
+             </div>
+    
+        </footer>
+    );
+  }
+}
+
+      // TOP BAR NAVIGATION
+      class Header extends React.Component {
+          render() {
+            return (
+              <div> 
+                      <header id="header">
+                <nav id="navbar" className="navbar navbar-expand-lg navbar-light py-0 header-nav">
+                    <p className="text-white mt-3 mr-1">Call Us: </p><a className="top-bar-links" href="tel:0555024505"> +233 555024505</a>
+                
+                      <ul className="navbar-nav ml-auto">
+                        <li className="nav-item mt-4 px-2">
+                          <Link to="/support" className="top-bar-links">Support</Link>
+                        </li>
+                        <div className="vl-top-bar"></div>
+                        <li className="nav-item mt-4 px-2">
+                          <Link to="/about" className="mt-4 top-bar-links">About</Link>
+                        </li>
+                        <div className="vl-top-bar"></div>
+                        
+                        <li className="nav-item mt-4 px-2">
+                          <a className="mt-4 top-bar-links" href="#"><i className="fas fa-envelope"></i></a>
+                        </li>
+                        <div className="vl-top-bar"></div>
+                        <li className="nav-item mt-4 px-2">
+                          <a className="mt-4 top-bar-links" href="#"><i className="fab fa-facebook"></i></a>
+                        </li>
+                        <div className="vl-top-bar"></div>
+                        <li className="nav-item mt-4 px-2">
+                          <a className="mt-4 top-bar-links" href="#"><i className="fab fa-instagram"></i></a>
+                        </li>
+                      </ul>
+                      
+                  </nav> 
+            </header>
+
+              <div id="small-screen-header">
+              <div id="left-item">
+                
+                <p><i className="fas fa-phone-alt"></i> <a className="top-bar-links" href="tel:0555024505">+233 555024505</a></p>
+              </div>
+              <div id="right-items">
+                <Link className="nav-link mt-2 top-bar-links" to="/support">Support</Link>
+                <div className="vl-top-bar"></div>
+                <Link className="nav-link mt-2 top-bar-links" to="/about">About</Link>
+                <div className="vl-top-bar"></div>
+                <a className="nav-link mt-2 top-bar-links" href="#"><i className="fas fa-envelope"></i></a>
+                <div className="vl-top-bar"></div>
+                <a className="nav-link mt-2 top-bar-links" href="#"><i className="fab fa-facebook"></i></a>
+                <div className="vl-top-bar"></div>
+                <a className="nav-link mt-2 top-bar-links" href="#"><i className="fab fa-instagram"></i></a>
+              </div>
+              </div>
+              
+              <div id="smallest-screen-header">
+              <div id="top-item">
+                
+                <p><i className="fas fa-phone-alt"></i><a className="top-bar-links" href="tel:0555024505">+233 555024505</a></p>
+              </div>
+              <div id="middle-items">
+                <Link className="nav-link mt-2 top-bar-links" to="/support">Support</Link>
+                <div className="vl-top-bar"></div>
+                <Link className="nav-link mt-2 top-bar-links" to="/about">About</Link>
+                <div className="vl-top-bar"></div>
+                <a className="nav-link mt-2 top-bar-links" href="#"><i className="fas fa-envelope"></i></a>
+                <div className="vl-top-bar"></div>
+                <a className="nav-link mt-2 top-bar-links" href="#"><i className="fab fa-facebook"></i></a>
+                <div className="vl-top-bar"></div>
+                <a className="nav-link mt-2 top-bar-links" href="#"><i className="fab fa-instagram"></i></a>
+              </div>
+              </div> 
+
+              </div>
+            );
+          }
+        }
+
+      // MAIN NAVIGATION
+      class BS4NavBar extends React.Component {
+
+        constructor(props) {
+        // alert(props.match.params.event_id)
+                // console.log("EVENT ID: " + props.match.params.event_id);
+                // console.log("CONTESTANT ID: " + props.match.params.contestant_id);
+        super(props);
+        this.state = {
+            // isLoading: false,
+            // contestantData: {},
+            // contestantName: '',
+            // contestantLocation: '',
+            // contestantImage: '',
+            // slideshows: [],
+            isNavCollapsed: true,
+        }
+
+        this.handleNavCollapse = this.handleNavCollapse.bind(this); // i think you are missing this
+    }
+
+    componentDidMount() {
+        // this.getSingleContestant();
+        // this.getEvents();
+    }
+
+    handleNavCollapse() {
+      this.setState({
+        isNavCollapsed: !this.state.isNavCollapsed
+      })
+    }
+        render() {
+          return(
+            <nav className="navbar navbar-expand-lg navbar-light nav-real">
+        <Link to="/" className="navbar-brand" style={{cursor: 'pointer'}}>Voteezy</Link>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded={!this.state.isNavCollapsed ? true : false}
+        aria-label="Toggle navigation"
+        onClick={this.handleNavCollapse}
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+      
+        <div 
+        className={`${this.state.isNavCollapsed ? 'collapse' : ''} navbar-collapse`} 
+        id="navbarSupportedContent"
+        >
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <Link to="/" className="nav-link" style={{cursor: 'pointer'}}>Home <span className="sr-only">(current)</span></Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/competitions" className="nav-link" style={{cursor: 'pointer'}}>Competitions</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/contact" className="nav-link" style={{cursor: 'pointer'}}>Contact us</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/sign-up" className="nav-link" href="#"><button>Sign up</button></Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/sign-in" className="nav-link" href="#"><button>Sign in</button></Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+          )
+        }
+      }
+
+      class Home extends React.Component {
+        constructor(props) {
+        super(props);
+    
+        this.state = {
+            isLoading: true,
+            events: [],
+            slideshows: [],
+            timer: null,
+            currentIndex: 0
+        }
+        this.next = this.next.bind(this)
+        this.prev = this.prev.bind(this)
+        // this.prev = this.prev.bind(this)
+    }
+
+    componentDidMount() {
+      this.getSlideshows();
+      this.getEvents();
+      this.startSlide();
+    }
+
+    // CAROUSEL ACTIONS
+    startSlide() {
+      this.state.timer = setInterval(this.next, 400000);
+    }
+
+     next() {
+       console.log("Next clicked")
+      this.state.currentIndex += 1;
+    }
+
+    prev() {
+      console.log("Previous clicked")
+      this.state.currentIndex -= 1;
+    }
+
+    getSlideshows() {
+
+      fetch(
+        PAYMENT_API_URL + 'voteezy/slideshows',
+        {
+          // method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+            // 'Authorization': 'Basic ' + Base64.btoa('apiuser@gmail.com' +':'+ 'apiuser@gmail.com')
+            // 'Authorization': 'Basic ' + Buffer.from('apiuser@gmail.com' +':'+ 'apiuser@gmail.com').toString('base64') 
+          },
+        })
+        .then(res => res.json())
+        .then(datas => {
+          // alert(JSON.stringify(datas));
+          this.setState({ 
+              isLoading: false,
+              slideshows: datas, 
+          });
+          // alert()
+          // this.itemLength()
+        })
+        .catch((error) => {
+  
+          console.error(error);
+        });
+  
+      // this.setState({showConnectionProgressDialog: true})
+    }
+
+    getEvents() {
+
+        fetch(
+          PAYMENT_API_URL + 'events',
+          {
+            // method: 'POST',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+              // 'Authorization': 'Basic ' + Base64.btoa('apiuser@gmail.com' +':'+ 'apiuser@gmail.com')
+              // 'Authorization': 'Basic ' + Buffer.from('apiuser@gmail.com' +':'+ 'apiuser@gmail.com').toString('base64') 
+            },
+          })
+          .then(res => res.json())
+          .then(datas => {
+            // alert(JSON.stringify(datas));
+            this.setState({ 
+                isLoading: false,
+                events: datas, 
+            });
+            // alert()
+          })
+          .catch((error) => {
+    
+            console.error(error);
+          });
+    
+        // this.setState({showConnectionProgressDialog: true})
+      }
+
+
+  render() { 
+
+    // let eventID = this.state.events.id;
+    // alert(eventID);
+
+    var eventList = this.state.events.map((event, index) => {
+        // let eventID = event.id;
+      return ( 
+            <div 
+              key={index}
+              className="col-md-6 col-sm-6 col-xs-12 mb-5"
+              >
+                <div className="card h-100">
+                  <Link to={"/competition/" + event.id} className="btn" style={{cursor: 'pointer'}}>
+                    <img src={event.image} height="300" className="card-img-top" alt=""/>
+                  </Link>
+                    <div className="card-body">
+                      <Link to={"/competition/" + event.id} className="btn" style={{cursor: 'pointer'}}> 
+                      <h5 id="event_name" className="card-title text_uppercase_bold text-uppercase">{event.name}</h5>
+                      </Link>
+                    </div>
+                  </div>
+            </div> 
+      );
+    });
+          
+              // return (<h1 className="text-center">Home</h1>);
+              return(
+                <div>
+                  { this.state.isLoading == true ? (
+            <section className="container my-5 text-center" style={{ marginTop: "50px"}} id="home_all_competitions">
+            <h1 className="mt-5 text-center">Loading Voteezy Slideshow Images...</h1>
+        </section>
+                  ) : 
+                  (
+      <section id="voteezy_carousel">
+      <div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">
+        <div className="carousel-inner">
+          {
+           this.state.slideshows.map((slideImage, index) => {
+            return(
+            <div className="carousel-item active" key={index}>
+            <img src={slideImage.url} className="d-block w-100" alt="Voteezy Slideshow Images" />
+            </div>
+            )
+           })
+          }
+          
+        </div>
+        <a className="carousel-control-prev" onClick={this.prev} href="#carouselExampleFade" role="button" data-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="sr-only">Previous</span>
+        </a>
+        <a className="carousel-control-next" onClick={this.next} href="#carouselExampleFade" role="button" data-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="sr-only">Next</span>
+        </a>
+      </div>
+   </section>
+            )
+                  // <h1 className="mt-5 text-center">Slideshows here</h1>
+           }
+                    <section className="container my-5" id="play_app_stores">
+                    <h4 className="text-center">Download Voteezy Mobile apps</h4>
+                    <div style={{marginTop: '20px', marginBottom: '20px'}}></div>
+
+                    <div className="row text-center">
+                        <div className="col-6">
+                            <img src="/assets/images/appstore.png" alt="" className="img-fluid store_images" />
+                        </div>
+                        <div className="col-6">
+                            <img src="/assets/images/google_play.png" alt="" className="img-fluid store_images" />
+                        </div>
+                    </div>
+                    </section>
+
+                    <section className="container mt-5" style={{ marginTop: "80px"}} id="home_all_competitions">
+                        <h4 className="text-center">Competitions</h4>      
+                                <p className="text-center"> 
+                                    Assumenda vel nulla itaque doloribus delectus fuga fugiat autem. Hic consectetur deserunt voluptate recusandae odio est ut. Doloremque vero autem quia non. Cumque quia aut repellendus deleniti. Corporis consequuntur totam ut. Reiciendis sed sit repellat nihil quibusdam expedita earum labore.
+                                </p>
+                                
+                        <div className="row">
+                        {
+                          
+                    eventList.length ? eventList 
+                            :
+                            this.state.isLoading == true ? 
+                      <section className="container my-5 text-center" style={{ marginTop: "50px"}} id="home_all_competitions">
+                          <div className="container my-5 text-center"><h1>Loading competitions...</h1></div>
+                      </section>
+                            : null
+                  
+                        }
+                    </div>
+                    </section>  
+                    </div>
+              );
+          }
+      }
+      
+
+      class Contact extends React.Component {
+          render() {
+              return (<h1 className="text-center">Contact Us</h1>);
+          }
+      }
+
+      // class Competitions extends React.Component {
+      //   render() {
+      //         return (<h1 className="text-center">Contact Us</h1>);
+      //     }
+      // }
+
+      class Competitions extends React.Component {
+        constructor(props) {
+        super(props);
+    
+        this.state = {
+            isLoading: true,
+            events: [],
+        }
+        this.goBack = this.goBack.bind(this); // i think you are missing this
+        this.next = this.next.bind(this)
+        this.prev = this.prev.bind(this)
+    }
+
+    componentDidMount() {
+    this.getEvents();
+    this.startSlide();
+    }
+
+    // https://stackoverflow.com/questions/46681387/react-router-v4-how-to-go-back
+    goBack(){
+      this.props.history.goBack();
+    }
+
+      // CAROUSEL ACTIONS
+      startSlide() {
+      this.state.timer = setInterval(this.next, 400000);
+    }
+
+     next() {
+       console.log("Next clicked")
+      this.state.currentIndex += 1;
+    }
+
+    prev() {
+      console.log("Previous clicked")
+      this.state.currentIndex -= 1;
+    }
+
+
+    getEvents() {
+
+        fetch(
+          PAYMENT_API_URL + 'events',
+          {
+            // method: 'POST',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+              // 'Authorization': 'Basic ' + Base64.btoa('apiuser@gmail.com' +':'+ 'apiuser@gmail.com')
+              // 'Authorization': 'Basic ' + Buffer.from('apiuser@gmail.com' +':'+ 'apiuser@gmail.com').toString('base64') 
+            },
+          })
+          .then(res => res.json())
+          .then(datas => {
+            // alert(JSON.stringify(datas));
+            this.setState({ 
+                isLoading: false,
+                events: datas, 
+            });
+            // alert()
+          })
+          .catch((error) => {
+    
+            console.error(error);
+          });
+    
+        // this.setState({showConnectionProgressDialog: true})
+      }
+
+
+  render() {
+
+    var eventList = this.state.events.map((event, index) => {
+      return ( 
+        
+            <div 
+              key={index}
+              className="col-md-4 col-sm-6 col-xs-12 mb-5"
+              >
+                <div className="card h-100">
+                <Link to={"/competition/" + event.id} className="btn" style={{cursor: 'pointer'}}>
+                    <img src={event.image} height="300" className="card-img-top" alt=""/>
+                  </Link>
+                    <div className="card-body">
+                      <Link to={"/competition/" + event.id} className="btn" style={{cursor: 'pointer'}}> 
+                      <h5 id="event_name" className="card-title text_uppercase_bold">{event.name}</h5>
+                      </Link>
+                      {/* <a
+                      style={{ backgroundColor: '#e20000' }} 
+                      className="btn button-red text-uppercase absolute" 
+                      onClick={this.goBack}
+                      >
+                      <span style={{color: "#ffffff"}}>Back</span>
+                      </a> */}
+                    </div>
+                  </div>
+            </div> 
+      );
+    })
+
+    return (
+        <div className="container">
+            <section className="container my-5" style={{ marginTop: "50px"}} id="all_competitions">
+                
+        <div className="row">
+            {
+
+        eventList.length ? eventList 
+                :
+                this.state.isLoading == true ? 
+           <section className="container my-2" style={{ marginTop: "50px"}} id="home_all_competitions">
+             <h1 className="text-center">Loading Competitions...</h1>
+           </section>
+                 : null
+       
+            }
+
+            {/* {
+              this.state.isLoading ? (
+              <section className="container my-2" style={{ marginTop: "50px"}} id="home_all_competitions">
+
+              </section>)
+            } */}
+         </div>
+         </section>  
+    </div>
+    );
+          // render() {
+          //     return (<h1 className="text-center">Events</h1>);
+          // }
+      }
+  }
+
+    
+      class Competition extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {
+            isLoading: true,
+            eventName: '',
+            eventData: [],
+            eventName: '',
+            contestants: [],
+            eventId: '',
+            eventDescription: '',
+            completionDate: '',
+            siteSlideshows: [],
+            eventVideos: [],
+            eventPhotos: [],
+            showModal: false,
+            eventSlideshows: [],
+            totalVotes: 0
+          }
+        this.showPhotoCollectionModal = this.showPhotoCollectionModal.bind(this);
+        this.hidePhotoCollectionModal = this.hidePhotoCollectionModal.bind(this);
+        this.showVideoModal = this.showVideoModal.bind(this);
+        this.hideVideoModal = this.hideVideoModal.bind(this);
+
+        // this.showModalMethod = this.showModalMethod.bind(this);
+        // this.hideModalMethod = this.hideModalMethod.bind(this);
+        this.getPhotos = this.getPhotos.bind(this);
+        this.getVideos = this.getVideos.bind(this);
+        this.getVotes = this.getVotes.bind(this);
+        // this.goBack = this.goBack.bind(this); // i think you are missing this
+        }
+
+        // USE BOOTSRTAP 4 MODAL
+        // https://stackoverflow.com/questions/53013047/how-to-hide-a-bootstrap-modal-using-react-jsx
+        // https://codesandbox.io/s/ykkvl7547j
+        //  https://www.digitalocean.com/community/tutorials/react-modal-component
+
+        // hideModalMethod() {
+        // $("#pending-transaction-modal").modal("hide");
+        // };
+
+        // showModalMethod() {
+        // $("#pending-transaction-modal").modal("show");
+        // };
+
+        hidePhotoCollectionModal() {
+          // this.setState({ showPhotoAlbumModal: false })
+        $("#photo-collection-modal").modal("hide");
+        };
+
+        showPhotoCollectionModal() {
+        $("#photo-collection-modal").modal("show");
+        // this.setState({ showPhotoAlbumModal: true })
+        };
+
+        hideVideoModal() {
+        $("#video-modal").modal("hide");
+        // this.setState({ showEmbeddedVideoModal: false })
+        };
+
+        showVideoModal() {
+        $("#video-modal").modal("show");
+        // this.setState({ showEmbeddedVideoModal: true })
+        };
+
+        componentDidMount() {
+        this.getSlideshows();
+        this.getEvent();
+        this.getContestants();
+        // this.getPhotos();
+        // this.getVideos();
+        // this.getVideos();
+        // this.getVotes();
+        }
+
+        // Get Event
+      getEvent() {
+                // alert(PAYMENT_API_URL + 'events/' + this.props.match.params.id);
+        fetch(
+          PAYMENT_API_URL + 'events/' + this.props.match.params.id,
+          {
+            // method: 'POST',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+              // 'Authorization': 'Basic ' + Base64.btoa('apiuser@gmail.com' +':'+ 'apiuser@gmail.com')
+              // 'Authorization': 'Basic ' + Buffer.from('apiuser@gmail.com' +':'+ 'apiuser@gmail.com').toString('base64') 
+            },
+          })
+          .then(res => res.json())
+          .then(datas => {
+            // alert(JSON.stringify(datas));
+            // alert(JSON.stringify(datas.event.eventId));
+            // alert(JSON.stringify(datas.event.eventName));
+            console.log("EVENT");
+            console.log(JSON.stringify(datas.event));
+            console.log("ORGANISER");
+            console.log(JSON.stringify(datas.company));
+            // alert(JSON.stringify(datas.contestants));
+            // alert(JSON.stringify(datas.videos));
+            // alert(JSON.stringify(datas.photos));
+            // alert(JSON.stringify(datas.eventSlideshow));
+            this.setState({ 
+                isLoading: false,
+                eventName: datas.event.name, 
+                // contestants: datas.contestants,
+                eventId: datas.event.id,
+                organizer: datas.company.name,
+                eventDescription: datas.event.description,
+                completionDate: datas.event.end_date,
+                // eventVideos: datas.videos,
+                // eventPhotos: datas.photos,
+                // slideshows: datas.eventSlideshow
+            });
+            // alert()
+          })
+          .catch((error) => {
+
+            console.error(error);
+          });
+
+        // this.setState({showConnectionProgressDialog: true})
+      }
+
+      // Get Event Slideshows
+      getSlideshows() {
+                // alert(PAYMENT_API_URL + 'events/' + this.props.match.params.id + '/slideshow');
+        fetch(
+          PAYMENT_API_URL + 'events/' + this.props.match.params.id + '/slideshow',
+          {
+            // method: 'POST',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+              // 'Authorization': 'Basic ' + Base64.btoa('apiuser@gmail.com' +':'+ 'apiuser@gmail.com')
+              // 'Authorization': 'Basic ' + Buffer.from('apiuser@gmail.com' +':'+ 'apiuser@gmail.com').toString('base64') 
+            },
+          })
+          .then(res => res.json())
+          .then(datas => {
+            // alert(JSON.stringify(datas));
+            // alert(JSON.stringify(datas.event.eventId));
+            // alert(JSON.stringify(datas.event.eventName));
+            console.log("EVENT SLIDESHOWS");
+            console.log(JSON.stringify(datas));
+            // alert(JSON.stringify(datas.contestants));
+            // alert(JSON.stringify(datas.videos));
+            // alert(JSON.stringify(datas.photos));
+            // alert(JSON.stringify(datas.eventSlideshow));
+            this.setState({ 
+                isLoading: false,
+                eventSlideshows: datas.event_slideshows
+            });
+            // alert()
+          })
+          .catch((error) => {
+
+            console.error(error);
+          });
+
+        // this.setState({showConnectionProgressDialog: true})
+      }
+
+      getContestants() {
+                // alert(PAYMENT_API_URL + 'events/' + this.props.match.params.id + '/contestants');
+        fetch(
+          PAYMENT_API_URL + 'events/' + this.props.match.params.id + '/contestants',
+          {
+            // method: 'POST',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+              // 'Authorization': 'Basic ' + Base64.btoa('apiuser@gmail.com' +':'+ 'apiuser@gmail.com')
+              // 'Authorization': 'Basic ' + Buffer.from('apiuser@gmail.com' +':'+ 'apiuser@gmail.com').toString('base64') 
+            },
+          })
+          .then(res => res.json())
+          .then(datas => {
+            // alert(JSON.stringify(datas));
+            // alert(JSON.stringify(datas.event.eventId));
+            // alert(JSON.stringify(datas.event.eventName));
+            console.log("CONTESTANTS");
+            console.log(JSON.stringify(datas));
+            // alert(JSON.stringify(datas.contestants));
+            // alert(JSON.stringify(datas.videos));
+            // alert(JSON.stringify(datas.photos));
+            // alert(JSON.stringify(datas.eventSlideshow));
+            this.setState({ 
+                isLoading: false,
+                contestants: datas.contestants
+            });
+            // alert()
+          })
+          .catch((error) => {
+
+            console.error(error);
+          });
+
+        // this.setState({showConnectionProgressDialog: true})
+      }
+
+      getPhotos() {
+                // alert(PAYMENT_API_URL + 'events/' + this.props.match.params.id + '/photos');
+        fetch(
+          PAYMENT_API_URL + 'events/' + this.props.match.params.id + '/photos',
+          {
+            // method: 'POST',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+              // 'Authorization': 'Basic ' + Base64.btoa('apiuser@gmail.com' +':'+ 'apiuser@gmail.com')
+              // 'Authorization': 'Basic ' + Buffer.from('apiuser@gmail.com' +':'+ 'apiuser@gmail.com').toString('base64') 
+            },
+          })
+          .then(res => res.json())
+          .then(datas => {
+            // alert(JSON.stringify(datas));
+            // alert(JSON.stringify(datas.event.eventId));
+            // alert(JSON.stringify(datas.event.eventName));
+            console.log("PHOTOS");
+            console.log(JSON.stringify(datas));
+            // alert(JSON.stringify(datas.contestants));
+            // alert(JSON.stringify(datas.videos));
+            // alert(JSON.stringify(datas.photos));
+            // alert(JSON.stringify(datas.eventSlideshow));
+            this.setState({ 
+                isLoading: false,
+                eventPhotos: datas.photos
+            });
+            // alert()
+          })
+          .catch((error) => {
+
+            console.error(error);
+          });
+
+        // this.setState({showConnectionProgressDialog: true})
+      }
+
+      getVideos() {
+                // alert(PAYMENT_API_URL + 'events/' + this.props.match.params.id + '/videos');
+        fetch(
+          PAYMENT_API_URL + 'events/' + this.props.match.params.id + '/videos',
+          {
+            // method: 'POST',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+              // 'Authorization': 'Basic ' + Base64.btoa('apiuser@gmail.com' +':'+ 'apiuser@gmail.com')
+              // 'Authorization': 'Basic ' + Buffer.from('apiuser@gmail.com' +':'+ 'apiuser@gmail.com').toString('base64') 
+            },
+          })
+          .then(res => res.json())
+          .then(datas => {
+            // alert(JSON.stringify(datas));
+            // alert(JSON.stringify(datas.event.eventId));
+            // alert(JSON.stringify(datas.event.eventName));
+            console.log("VIDEOS");
+            console.log(JSON.stringify(datas));
+            // alert(JSON.stringify(datas.contestants));
+            // alert(JSON.stringify(datas.videos));
+            // alert(JSON.stringify(datas.photos));
+            // alert(JSON.stringify(datas.eventSlideshow));
+            this.setState({ 
+                isLoading: false,
+                eventVideos: datas.videos
+            });
+            // alert()
+          })
+          .catch((error) => {
+
+            console.error(error);
+          });
+
+        // this.setState({showConnectionProgressDialog: true})
+      }
+      
+      getVotes() {
+                // alert(PAYMENT_API_URL + 'events/' + this.props.match.params.id + '/votes');
+        fetch(
+          PAYMENT_API_URL + 'events/' + this.props.match.params.id + '/v1/vote/votes',
+          {
+            // method: 'POST',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+              // 'Authorization': 'Basic ' + Base64.btoa('apiuser@gmail.com' +':'+ 'apiuser@gmail.com')
+              // 'Authorization': 'Basic ' + Buffer.from('apiuser@gmail.com' +':'+ 'apiuser@gmail.com').toString('base64') 
+            },
+          })
+          .then(res => res.json())
+          .then(datas => {
+            // alert(JSON.stringify(datas));
+            // alert(JSON.stringify(datas.event.eventId));
+            // alert(JSON.stringify(datas.event.eventName));
+            console.log("VOTES");
+            console.log(JSON.stringify(datas));
+            // alert(JSON.stringify(datas.contestants));
+            // alert(JSON.stringify(datas.videos));
+            // alert(JSON.stringify(datas.photos));
+            // alert(JSON.stringify(datas.eventSlideshow));
+            this.setState({ 
+                isLoading: false,
+                totalVotes: datas.votes
+            });
+            // alert()
+          })
+          .catch((error) => {
+
+            console.error(error);
+          });
+
+        // this.setState({showConnectionProgressDialog: true})
+      }
+
+
+
+        render() {
+          // var organiser = this.state.organizer.name;
+// JS REMOVE HTML TAGS
+// https://stackoverflow.com/questions/48766615/how-to-remove-html-tags-from-json-data-in-react-native
+const regex = /(<([^>]+)>)/ig;
+const eventDescriptionParsed = this.state.eventDescription.replace(regex, '');
+
+var contestantList = this.state.contestants.map((contestant, index) => {
+  return(
+      <div 
+      key={contestant.id}
+      className="row my-3 main-row-container" 
+      // style={{}}
+      >
+        {/* PASSOING PARAMS TO REACT ROUTER
+        https://stackoverflow.com/questions/30115324/pass-props-in-link-react-router
+        https://medium.com/officialrajdeepsingh/how-to-pass-parameters-in-react-router-dom-link-7e8289574801
+        */}
+       <div className="col-sm-3">
+       <Link to={"/events/" + this.state.eventId + "/contestants/" + contestant.id} className="btn" style={{cursor: 'pointer'}}>
+         <img className="d-block w-100" src={contestant.url} alt={contestant.name} />
+         </Link>
+       </div>
+       <div className="col-sm-9">
+         <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}}>
+           <div style={{marginRight: "10px", paddingTop: "24px", display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+            <Link to={"/events/" + this.state.eventId + "/contestants/" + contestant.id} className="btn" style={{cursor: 'pointer'}}>
+            <h5 className="card-title text_uppercase_bold">{contestant.name}</h5>
+             </Link>
+             <Link to={"/events/" + this.state.eventId + "/contestants/" + contestant.id} className="btn" style={{cursor: 'pointer'}}>
+             <p className="card-text text_dark_gray text_uppercase p_hover_no_events ml-3">{contestant.location}</p>
+             </Link>
+             </div>
+           <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', paddingTop: '24px'}}>
+        <a href="#" className="btn button-red">Vote</a>
+        
+           </div>
+         </div>
+       </div>
+     
+        {/* Contestant Profile Card Ends */}
+     </div>
+  );
+});
+
+var contestantListVotesTally = this.state.contestants.map((contestant, index) => {
+// var contestantListVotesTally = this.state.contestants.map((contestant, index) => {
+return (
+     <div 
+       key={contestant.id}
+       className="row my-3 main-row-container" 
+      //  style={{}}
+       >
+         <div className="col-sm-3">
+           <img className="d-block w-100" src={contestant.url} alt={contestant.name} />
+         </div>
+         <div className="col-sm-9">
+           <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}}>
+             <div style={{marginRight: '10px', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+               <h5 className="card-title text_uppercase_bold">{contestant.name}</h5>
+               <p className="card-text text_dark_gray text_uppercase p_hover_no_events">
+               {contestant.location}
+               </p>
+             </div>
+             <div className="vl"></div>
+             <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+                 {/* ADD NON BREAKING SPACE 
+                 https://stackoverflow.com/questions/37909134/nbsp-jsx-not-working    
+                 */}
+               <p className="text_uppercase_bold">This&nbsp;Week:&nbsp;<span className="text_dark_gray">10</span></p>
+               <p className="text_uppercase_bold">Total:<span className="text_dark_gray">&nbsp;10</span></p>
+             <a href="#" className="btn button-red align-self-center">Vote&nbsp;Again</a>
+             </div>
+           </div>
+         </div>
+       </div>
+)
+});
+
+
+var contestantListMyVotes = this.state.contestants.map((contestant, index) => {
+return (
+  <div 
+  className="main-row-container"
+  key={contestant.id}
+  // style={{}}
+  >
+  <div className="row mt-3" style={{}}>
+    <div className="col-sm-3">
+      <img className="d-block w-100" src={contestant.url} alt={contestant.name} />
+    </div>
+    <div className="col-sm-9">
+        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}}>
+          <div style={{marginRight: '10px', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+            <h5 className="card-title text_uppercase_bold">{contestant.name}</h5>
+            <p className="card-text text_dark_gray text_uppercase p_hover_no_events">
+              {contestant.location}
+            </p>
+          </div>
+          <div className="vl"></div>
+          <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+          <p className="text_uppercase_bold">This&nbsp;Week:&nbsp;<span className="text_dark_gray">10</span></p>
+          <p className="text_uppercase_bold">Total:<span className="text_dark_gray">&nbsp;10</span></p>
+       <a href="#" className="btn button-red">Vote&nbsp;Again</a>
+          </div>
+        </div>
+    </div>
+  </div>
+    {/* Contestants Horizontal Card Ends  */}
+    <p className="small-text">NOTE: This is the total number of votes you have contributed to this contestant in this competition.</p>
+    <button id="vote_for_another" className="btn btn-green mb-5">Vote for another contestant</button>
+</div>
+)
+});
+
+var videos = this.state.eventVideos.map((video, index) => {
+  let singleVideo = video.youtube_link;
+  let videoArray = singleVideo.split('watch?v=');
+		let videoId = videoArray[1];
+		if (videoId.indexOf('&') !== -1) {
+			let videoArray = videoId.split('&');
+			videoId = videoArray[0];
+			console.log("Inside index & " + videoId);
+		}
+		console.log("Video id "+ videoId);
+		// alert("Video id "+ videoId);
+    // alert("https://www.youtube.com/embed/" + videoId)
+return (
+  <div
+  key={video.id}
+  className="col-lg-4 col-md-12 col-sm-12 col-12 p-2 h-100"
+  >
+  <div className="card p-2 w-100" onClick={this.showVideoModal}>
+    <video width={'100%'} height={'100%'} poster={video.image} style={{alignSelf: 'center', cursor: 'pointer' }}></video>
+    {/* Pending Transaction Received Modal */}
+    <div className="modal modal-fullscreen fade" id="video-modal" tabIndex="-1" role="dialog" >
+       <div className="table">
+       <div className="table-cell">
+           <div className="modal-dialog modal-lg ml-2 mr-2" role="document">
+               <div className="modal-content">
+                 <button type="button" className="btn-block-option" data-dismiss="modal" aria-label="Close">
+                   <i className="fa fa-fw fa-times"></i>
+               </button>
+                  <div className="container-fluid ml-1">
+                   <div className="row p-5">
+                    <div className="col-12">
+                          <iframe width="240" height="240"
+                            // src={ `"https://www.youtube.com/embed/"` }
+                            src={"https://www.youtube.com/embed/" + videoId}
+                            style={{alignSelf: 'center', }}
+                            >
+                          </iframe>
+                    </div>
+                    </div>
+                  </div>
+               </div>
+           </div>
+           </div>
+           </div>
+     </div>
+     {/* End Pending Transaction Modal */}
+    {/* <video width={200} height={240} controls poster={video.image} controls style={{alignSelf: 'center', }}>
+     
+    </video> */}
+    {/*<a href={video.youtube_link} target="_blank" style={{color: '#e20000', textAlign: 'center', display: 'none'}}>View on Youtube</a> */}
+  </div>
+</div>
+)
+}) 
+
+// NESTED OBJECT ITERATION
+// https://stackoverflow.com/questions/43423694/react-how-to-map-nested-object-values
+var photos = this.state.eventPhotos.map((photo) => {
+let photoCollection = photo.images;
+console.log("PHOTO COLLECTION " + JSON.stringify(photoCollection))
+return (
+  <div 
+  key={photo.id}
+  className="col-lg-4 col-md-6 col-sm-12 col-12" 
+  // style={{ border: '1px solid tomato' }}  
+     >
+       <a style={{cursor: 'pointer'}} className="btn" 
+      //  onMouseOver={this.showModalMethod} 
+      //  onMouseDown={this.showModalMethod} 
+       onClick={this.showPhotoCollectionModal}
+       >
+         <img className="img-fluid" src={photo.main_image} alt={photo.title} />
+       </a>
+
+       <div className="text-left mt-2 ml-3 mr-3">
+         <h6>{photo.title}</h6>
+       </div>
+       {/* Pending Transaction Received Modal */}
+     <div className="modal modal-fullscreen fade" id="photo-collection-modal" tabIndex="-1" role="dialog">
+       <div className="table">
+       <div className="table-cell">
+           <div className="modal-dialog modal-lg ml-2 mr-2" role="document">
+               <div className="modal-content">
+                 <button type="button" className="btn-block-option" data-dismiss="modal" aria-label="Close">
+                   <i className="fa fa-fw fa-times"></i>
+               </button>
+                  <div className="container-fluid ml-1">
+                   <div className="row p-5">
+                       {
+                         photoCollection.map((images, index) => {
+                         return ( 
+                         <div 
+                          key={index}
+                          className="col-lg-4 col-md-12 col-sm-12 col-12 p-2 mb-4 mt-2" 
+                          >
+                          <img className="img-fluid" src={images} alt={photo.title} />
+                          </div>
+                         )
+                         })
+                       }
+                    
+                    </div>
+                  </div>
+               </div>
+           </div>
+           </div>
+           </div>
+     </div>
+     {/* End Pending Transaction Modal */}
+     </div>
+)
+});
+
+
+//   var photoCollection = this.state.eventPhotos.images.map(() => {
+
+//   })
+
+return (
+<section className="">
+
+        
+{/* SINGLE SITE SLIDESHOWS 
+<a
+          className="btn back-icon-red absolute" 
+          onClick={this.goBack}
+          >
+          <i className="fas fa-arrow-left"></i>
+        </a>
+*/}
+
+{
+this.state.isLoading == true ? (
+      <section className="container my-5 text-center" style={{ marginTop: "50px"}} id="home_all_competitions">
+      <h1 className="mt-5 text-center">Loading Competition Slideshows...</h1>
+  </section>
+            ) : 
+            (
+<section id="voteezy_carousel">
+<div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">
+  <div className="carousel-inner">
+    {
+     this.state.eventSlideshows.map((slideImage, index) => {
+      return(
+      <div className="carousel-item active" key={index}>
+      <img src={slideImage.url} className="d-block w-100" alt="Voteezy Slideshow Images" />
+      </div>
+      )
+     })
+    }
+    
+  </div>
+  <a className="carousel-control-prev" onClick={this.prev} href="#carouselExampleFade" role="button" data-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="sr-only">Previous</span>
+  </a>
+  <a className="carousel-control-next" onClick={this.next} href="#carouselExampleFade" role="button" data-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="sr-only">Next</span>
+  </a>
+</div>
+</section>
+      ) 
+}
+
+  {/* EVENT NAME */}
+<p className="text_single_event_name text_uppercase_bold">{this.state.eventName}</p>
+
+{/* Wrapper Container Starts */}
+<div className="container">
+<div style={{marginTop: '20px', marginBottom: '30px'}}></div>
+{/* Nav tabs 
+    <ul className="nav nav-pills just" role="tablist">
+*/}
+<ul className="nav nav-pills nav-justified" role="tablist">
+ <li className="nav-item">
+   <a className="nav-link active" data-toggle="pill" href="#contestants_tab">Contestants</a>
+ </li>
+ <li className="nav-item">
+   <a className="nav-link" data-toggle="pill" href="#votes_tab">Votes</a>
+ </li>
+ <li className="nav-item">
+   <a className="nav-link" data-toggle="pill" href="#about_event_and_company_tab">About</a>
+ </li>
+ <li className="nav-item" onClick={this.getPhotos}>
+   <a className="nav-link" data-toggle="pill" href="#gallery_tab">Gallery</a>
+ </li> 
+</ul>
+
+{/* Tab panes */}
+{/* Tabs Content Container Starts */}
+<div className="tab-content justifyContent-center">
+ {/* Contestants Main Tab Content Starts */}
+ <div id="contestants_tab" className="container tab-pane active"><br/>
+{/* Contestants Horizontal Card Starts */}
+ <div className="container">
+  {
+  contestantList.length ? contestantList : <div className="container text-center"><div className="container my-5 text-center"><h1>Loading...</h1></div></div>
+  // contestantList.length ? contestantList : <div className="container text-center"><h1>Loading...</h1></div>
+  }
+</div>
+ {/* Contestants Horizontal Card Ends  */}
+</div> 
+{/* Contestants Main Tab Content Ends */}
+
+{/* Votes Main Tab Content Starts */}
+ <div id="votes_tab" className="container tab-pane fade"><br/>
+     {/* Nav tabs */}
+     <ul className="nav nav-tabs nav-justified" role="tablist">
+       <li className="nav-item">
+         <a className="nav-link active" data-toggle="tab" href="#votes_tally">Votes Tally</a>
+       </li>
+       <li className="nav-item">
+         <a className="nav-link" data-toggle="tab" href="#my_votes">My Votes</a>
+       </li>
+       <li className="nav-item">
+         <a className="nav-link" data-toggle="tab" href="#my_transactions">My Payments</a>
+       </li>
+     </ul>
+   
+     {/* Tab panes */}
+     <div className="tab-content">
+       <div id="votes_tally" className="container tab-pane active"><br/>
+       {/* Contestants Horizontal Card Starts */}
+       <div className="container" >
+       {
+       contestantListVotesTally.length ? contestantListVotesTally : <div className="container text-center"><h1>Loading...</h1></div>
+        }
+       </div>
+      </div>
+       <div id="my_votes" className="container tab-pane fade"><br/>
+
+         {/* Contestants Horizontal Card Starts 
+        
+        */}
+         {
+       contestantListVotesTally.length ? contestantListMyVotes : <div className="container text-center"><h1>Loading...</h1></div>
+        }
+     </div>
+      {/* //  MY TRANSACTIONS */}
+       <div id="my_transactions" className="containe tab-pane fade my-5"><br/>
+         <h5 className="text-danger text-center text_decoration_underline_red">Transaction Summary for This User</h5>
+         <div className="text-center">
+           <button className="btn linkified_button"><p className="transaction_summary_links">Successful</p></button> <br/>
+           <button className="btn linkified_button"><p className="transaction_summary_links">Pending</p></button> <br/>
+           <button className="btn linkified_button"><p className="transaction_summary_links">Failed</p></button>
+         </div>
+       </div>
+     </div>
+ </div>
+{/* //   Votes Main Tab Content Ends */}
+
+{/* //   About Main Tab Content Ends */}
+ <div id="about_event_and_company_tab" className="container tab-pane fade p-2 mb-5" style={{}}><br/>
+   <div className="mb-5">
+     <p style={{color: '#141414'}}>{eventDescriptionParsed}</p>
+     {/* <p style={{color: '#141414'}}>{this.state.eventDescription}</p> */}
+   </div>
+   <h5 className="text_uppercase_bold">Organizer:</h5>
+   <h5 className="text_uppercase_bold">{this.state.organizer}</h5>
+   {/* <h5 className="text_uppercase_bold">{this.state.organizer.name == null ? "Name of organisation" : this.state.organizer.name}</h5> */}
+   {/* <h5 className="text_uppercase_bold">{organiser ? organiser : "Name of Organisation"}</h5> */}
+   <div className="hl"></div>
+   <h5 className="text_uppercase_bold mt-2">Competition Ends</h5>
+   <h5 className="text_uppercase_bold">{moment(this.state.completionDate).format('d/MM/YYYY')}</h5>
+ </div>
+  {/* // About Main Tab Content Ends */}
+  {/* //  Gallery Main Tab Content Ends */}
+ <div id="gallery_tab" className="container tab-pane fade"><br/>
+   <div className="container">
+     <br/>
+     {/* Nav tabs */}
+     <ul className="nav nav-tabs" role="tablist">
+       <li className="nav-item" onClick={this.getPhotos}>
+         <a className="nav-link active" data-toggle="tab" href="#pictures">Pictures</a>
+       </li>
+       <li className="nav-item" onClick={this.getVideos}>
+         <a className="nav-link" data-toggle="tab" href="#videos">Videos</a>
+       </li>
+     </ul>
+   
+     {/* Tab panes */}
+     <div className="tab-content">
+       <div id="pictures" className="container tab-pane active p-1"><br/>
+         <div className="container">
+           <div className="row">
+           {
+             photos.length ? photos : <div className="container text-center"><h1>Loading...</h1></div>
+
+         }
+           </div>
+         </div>
+       </div>
+       <div id="videos" className="container tab-pane fade p-1"><br/>
+         
+         <div className="row">
+         {
+             videos.length ? videos : <div className="container text-center"><h1>Loading...</h1></div>
+
+         }
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+  {/* Gallery Main Tab Content Ends */}
+</div>
+{/* Tab Content Container Starts */}
+</div>
+{/* Wrapper Container Starts */}
+</section>
+);
+        }
+      }
+
+      // class Contestant extends React.Component {
+      //     render() {
+      //         return (<h1 className="text-center">Contestant</h1>);
+      //     }
+      // }
+
+  class Contestant extends React.Component {
+    constructor(props) {
+    alert(props.match.params.event_id)
+            // console.log("EVENT ID: " + props.match.params.event_id);
+            // console.log("CONTESTANT ID: " + props.match.params.contestant_id);
+    super(props);
+    this.state = {
+        isLoading: true,
+        contestantData: {},
+        contestantName: '',
+        contestantLocation: '',
+        contestantImage: '',
+        eventSlideshows: [],
+    }
+
+    this.goBack = this.goBack.bind(this); // i think you are missing this
+    this.next = this.next.bind(this)
+    this.prev = this.prev.bind(this)
+}
+
+  // CAROUSEL ACTIONS
+  startSlide() {
+      this.state.timer = setInterval(this.next, 400000);
+    }
+
+     next() {
+       console.log("Next clicked")
+      this.state.currentIndex += 1;
+    }
+
+    prev() {
+      console.log("Previous clicked")
+      this.state.currentIndex -= 1;
+    }
+
+componentDidMount() {
+    this.getSlideshows();
+    this.startSlide();
+    this.getSingleContestant();
+}
+
+// https://stackoverflow.com/questions/46681387/react-router-v4-how-to-go-back
+goBack(){
+  this.props.history.goBack();
+}
+
+getSingleContestant() {
+    // alert(PAYMENT_API_URL + 'events/' + this.props.match.params.event_id + "/contestants/" + this.props.match.params.contestant_id);
+    fetch(
+    PAYMENT_API_URL + 'events/' + this.props.match.params.event_id + "/contestants/" + this.props.match.params.contestant_id,
+    {
+        // method: 'POST',
+        headers: {
+        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+        // 'Authorization': 'Basic ' + Base64.btoa('apiuser@gmail.com' +':'+ 'apiuser@gmail.com')
+        // 'Authorization': 'Basic ' + Buffer.from('apiuser@gmail.com' +':'+ 'apiuser@gmail.com').toString('base64') 
+        },
+    })
+    .then(res => res.json())
+    .then(datas => {
+        console.log(JSON.stringify(datas.contestants));
+        // alert(JSON.stringify(datas.contestants));
+        // alert(JSON.stringify(datas.videos));
+        // alert(JSON.stringify(datas.photos));
+        this.setState({ 
+            isLoading: false,
+            contestantData: datas.contestant,
+            contestantName: datas.contestant.name,
+            contestantLocation: datas.contestant.location,
+            contestantImage: datas.contestant.detail_image,
+            
+        });
+        // alert()
+    })
+    .catch((error) => {
+
+        console.error(error);
+    });
+
+    // this.setState({showConnectionProgressDialog: true})
+    }
+
+getSlideshows() {
+      // alert(PAYMENT_API_URL + 'events/' + this.props.match.params.event_id);
+        fetch(
+          PAYMENT_API_URL + 'events/' + this.props.match.params.event_id + '/slideshow',
+          {
+            // method: 'POST',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+              // 'Authorization': 'Basic ' + Base64.btoa('apiuser@gmail.com' +':'+ 'apiuser@gmail.com')
+              // 'Authorization': 'Basic ' + Buffer.from('apiuser@gmail.com' +':'+ 'apiuser@gmail.com').toString('base64') 
+            },
+          })
+          .then(res => res.json())
+          .then(datas => {
+            // alert(JSON.stringify(datas));
+            // alert(JSON.stringify(datas.event.eventId));
+            // alert(JSON.stringify(datas.event.eventName));
+            console.log(JSON.stringify(datas));
+            this.setState({ 
+                isLoading: false,
+                eventSlideshows: datas.event_slideshows
+            });
+            // alert()
+          })
+          .catch((error) => {
+
+            console.error(error);
+          });
+
+// this.setState({showConnectionProgressDialog: true})
+}
+
+
+render() {
+  var contestantDetails = this.state.contestantData;
+//   alert(JSON.stringify(contestantDetails));
+return (
+  <div className="">
+   {
+  //  this.state.isLoading ? (<div className="container text-center mt-2"><h1>Loading Event Slideshow Images...</h1></div>) : null
+  this.state.isLoading == true ? (
+        <section className="container my-5 text-center" style={{ marginTop: "50px"}} id="home_all_competitions">
+        <h1 className="mt-5 text-center">Loading Competition Slideshows...</h1>
+    </section>
+              ) : 
+              (
+  <section id="voteezy_carousel">
+  <div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">
+    <div className="carousel-inner">
+      {
+       this.state.eventSlideshows.map((slideImage, index) => {
+        return(
+        <div className="carousel-item active" key={index}>
+        <img src={slideImage.url} className="d-block w-100" alt="Voteezy Slideshow Images" />
+        </div>
+        )
+       })
+      }
+      
+    </div>
+    <a className="carousel-control-prev" onClick={this.prev} href="#carouselExampleFade" role="button" data-slide="prev">
+      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span className="sr-only">Previous</span>
+    </a>
+    <a className="carousel-control-next" onClick={this.next} href="#carouselExampleFade" role="button" data-slide="next">
+      <span className="carousel-control-next-icon" aria-hidden="true"></span>
+      <span className="sr-only">Next</span>
+    </a>
+  </div>
+</section>
+        )    
+}
+      {
+
+    this.state.isLoading ? (<div className="container text-center"><h1>Loading Contestant Profile...</h1></div>) :
+    (
+        <section className="container my-5" v-if="singleContestant">
+        <div id="contestants_profile_card">        
+          <div className="card p-3" style={{borderRadius: '15px'}}>
+            <div className="my-3">
+              <h4 className="ml-3" style={{color: "#e20000"}}>CONTESTANT PROFILE</h4>
+            </div>
+          <img src={this.state.contestantImage} className="card-img-top" alt={this.state.contestantName} />
+          <div className="card-body">
+            <h5 className="card-title text_uppercase_bold">{this.state.contestantName}</h5>
+            <p className="card-text text_uppercase">{this.state.contestantLocation}</p>
+            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
+            <a href="#" className="btn button-red">Vote</a>
+            {/* <Link to={"/events/" + this.props.match.params.event_id + "/contestants/" + this.props.match.params.contestant_id}  */}
+           
+              {/* 
+               <a
+            className="btn back-icon-red absolute_1" 
+            onClick={this.goBack}
+            >
+            <i className="fas fa-arrow-left"></i>
+              </a>
+              </Link> 
+            */}
+            </div>
+          </div>
+        </div>
+  
+        </div>
+        </section>
+    ) 
+    }
+  </div>
+);
+}
+      // render() {
+      //     return (<h1 className="text-center">Contestant</h1>);
+      // }
+  }
+
+
+      class About extends React.Component {
+          render() {
+              return (<h1 className="text-center">About</h1>);
+          }
+      }
+
+      class Register extends React.Component {
+          render() {
+              return (<h1 className="text-center">Register</h1>);
+          }
+      }
+
+      class Signin extends React.Component {
+          render() {
+              return (<h1 className="text-center">Sign in</h1>);
+          }
+      }
+      class Support extends React.Component {
+          render() {
+              return (<h1 className="text-center">Support</h1>);
+          }
+      }
+
+      class App extends React.Component {
+        render() {
+          return(
+            // <BS4NavBar />
+            <ReactRouterDOM.HashRouter>
+           <Header />
+           <BS4NavBar />
+           <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path="/sign-in" component={Signin} />
+            <Route path="/sign-up" component={Register} />
+            <Route path="/about" component={About} />
+            <Route path="/support" component={Support} />
+            <Route path="/competition/:id" component={Competition} />
+            <Route path="/competitions" component={Competitions} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/events/:event_id/contestants/:contestant_id" component={Contestant} />
+          </Switch>
+          <Footer />
+           </ReactRouterDOM.HashRouter>
+          )
+        }
+      }
+      
+      ReactDOM.render(
+          <App />,
+          document.getElementById('root')
+      );
+      // ReactDOM.render(
+      //     <Greeting />,
+      //     document.getElementById('root')
+      // );
+      </script>      
+    
+  </body>
+</html>
